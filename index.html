@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <style>@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');</style>  
+  <title>My To-Do List</title>
+</head>
+<body>
+  <main class="container">
+    <section class="header">
+      <nav class="nav">
+        <ul class="nav__filter-menu">
+          <button class="nav__filter-menu__otnBtn" id="navBtn_seeAllTasks"><li class="nav__filter-menu__option">SEE ALL</li></button>
+          <hr class="hrv">
+          <button class="nav__filter-menu__otnBtn" id="navBtn_seeDoneTasks"><li class="nav__filter-menu__option">ONLY DONE</li></button>
+          <hr class="hrv">
+          <button class="nav__filter-menu__otnBtn" id="navBtn_seePendingTasks"><li class="nav__filter-menu__option">ONLY PENDING</li></button>
+        </ul>
+      </nav>
+    </section>
+    <section class="input-box">
+      <h1 class="input-box__greeting-title" id="inputboxGreetingTitle">MY TO-DO LIST</h1><hr>
+      <p class="input-box__greeting-text" id="inputboxGreetingText">What are your plans for today?</p>
+      <form id="input-box__form">
+        <input type="text" class="input-box__form__title" id="inputboxFormTitle" placeholder="Activity Title" required>
+        <input type="text" class="input-box__form_description" id="inputboxFormDescription" placeholder="Description" required>
+        <button type="button" class="input-box__form_addbtn" id="inputBoxFormAddBtn">ADD TO THE LIST</button>
+      </form>          
+    
+    </section>
+    <section class="tasklistbox">
+      <ul class="tasklistbox__tasklist" id="tasklist">   
+      </ul>      
+    </section>
+  </main>
+  <script src="./src/index.js" type="module" defer></script>
+</body>
+</html>

@@ -1,0 +1,218 @@
+:root {  
+  --gradiantBG: linear-gradient(180deg, #020024 0%, #cfdf84 0%, #00d4ff 100%);
+  --btn: #7cf06a;
+  --btn2: #a5ff90;
+  
+}
+*{
+  box-sizing: border-box;
+}
+
+@media (max-width: 181px) {
+  body{
+    margin: 0 0.2em;
+    background-image: url("/assets/img/47245.png");
+    background-size: 32px 32px; 
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .5em;
+  }
+}
+
+@media (min-width: 182px) and (max-width: 360px) {
+  body{
+    margin: 0 0.2em;
+    background-image: url("/assets/img/47245.png");
+    background-size: 32px 32px;  
+
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 361px){
+  body{
+    margin: 0 0.2em;
+    background-image: url("/assets/img/47245.png");
+    background-size: 32px 32px;  
+  
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100%;
+  }
+}
+
+main{
+  text-align: center;
+  width: 95%;
+  max-width: 1080px;
+}
+
+.header{
+  &>nav{    
+    width: auto;   
+    & ul{
+      display: flex;
+      margin-top: 0;
+      background: var(--gradiantBG);      
+      border: #09350b 1px solid;
+      box-shadow: 0px 2px 2px;
+      &>li{        
+        list-style: none;
+        display: inline-block;
+        padding: 15px 20px;
+      } 
+    }
+  }
+}
+
+.nav__filter-menu{
+  padding: 0em;
+  list-style: none;
+}
+
+hr.hrv{   
+  border: none;
+  border-left: 1px solid hsla(200, 10%, 70%,100);
+  width: 1px;       
+}
+
+.input-box{  
+  background: var(--gradiantBG);
+  border-radius: 0.5em;
+  border: #09350b 1px solid;
+  padding: 0 1em 1em 1em;
+  box-shadow: 0px 2px 2px;  
+  display: flex;
+  flex-direction: column;  
+  justify-content: center;
+  margin-top: 1em;  
+  &>h1{
+    font-family: "M PLUS Rounded 1c", sans-serif;  
+  }
+  & *{
+    display: block;    
+    width: 100%;
+  }
+}
+.input-box__greeting-title{
+  margin-bottom: 0px;
+
+}
+.input-box__greeting-text{
+  font-style: italic;
+  margin-right: 10px;
+  font-size: 0.8em;
+}
+.tasklistbox{
+  padding-left: 0;    
+  background: var(--gradiantBG);
+  border-radius: 1%;
+  border: #454545 1px solid;
+  padding: 0 1em 0 1em;
+  box-shadow: 0px 2px 2px;
+  font-style: italic;
+  display: flex;
+  flex-direction: column;  
+  justify-content: center;
+  margin-top: 1em;  
+
+  &>ul{
+    padding: 0;
+    padding-bottom: 0px;   
+    display: flex;
+    flex-direction: column;
+    gap: 1em;    
+
+    &>li{
+      background-color: #e3e3e3;
+      border-radius: 0.2em;
+      box-shadow: 0px 1px 1px 0px inset;
+      overflow: auto;
+      font-size: 0.6em;
+      width: 100%;
+      padding: 0.6em;
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      align-items: center;
+
+      &>input{
+        margin: 0 1em;
+      }     
+      
+      &>span{
+        font-size: 1.3em;
+      } 
+    }
+  }  
+}
+
+input{
+  font-family: cursive;
+  height: 3em;
+  margin: 20px 0px;
+  border-radius: 8%;
+  cursor: pointer;
+
+  &[type="checkbox"]:checked + span {
+      text-decoration: line-through;
+  }  
+}  
+
+button{   
+  cursor: pointer;
+  height: 2rem;
+
+  &.nav__filter-menu__otnBtn{
+    background: transparent; 
+    width: 100%;
+    border: none;    
+  }
+
+  &.nav__filter-menu__otnBtn{
+    &:hover{
+      background-color: var(--btn2) ;  
+      transition: .5s;  
+    }
+  }
+  
+  &.input-box__form_addbtn{  
+    font-family: cursive;          
+    background-color: var(--btn);
+    border: 1px;  
+    &:hover{
+      background-color: var(--btn2) ;  
+      transition: .75s;  
+    }
+  }
+  
+  &.tasklist__task__removeTask{
+    font-family: cursive;
+    background-color: var(--btn);
+    border: 1px;
+    border: 0;
+    background-color:  transparent;
+    width:1em;
+    height: 1em;
+    margin-left: auto;
+    margin-right: 2em;
+    margin-bottom: 1em;
+    &>img{
+      width:2em;
+      height: auto;
+      &:hover{
+        filter: brightness(70%);
+        filter: opacity(.75s);        
+        transition: 0.2s;
+      }
+    }
+  }
+}
+
