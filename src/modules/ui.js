@@ -118,7 +118,6 @@ function startUI() {
   //Si hay datos guardados en el localStorage, cargarlos y crear nueva lista 
   //con ellos. Sino, crearla vacia.
   let list = loadListLocalStorage();
-  console.log(list.getTaskList());
   if (list===null)
     list = createTaskList();  
   setupEventsUI(list);  
