@@ -57,7 +57,7 @@ function showTasksUI(list, mode) {
       const checkbox = document.createElement("input");   
       const boton = document.createElement("button");
       const img = document.createElement('img'); 
-      img.src="../../assets/img/trash.png";
+      img.src="assets/img/trash.png";
       checkbox.type="checkbox"; 
       if (task.checked)
         checkbox.checked="true";      
