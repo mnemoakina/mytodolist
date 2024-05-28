@@ -80,7 +80,6 @@ export function loadListLocalStorage() {
       return []
     }else{
       hidroLista = Object.assign(new TaskList(), lista);
-      console.log(hidroLista.getTaskList());
       return hidroLista;
     }     
   }catch(error){

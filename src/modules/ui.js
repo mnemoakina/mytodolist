@@ -68,8 +68,7 @@ function showTasksUI(list, mode) {
       contTarea.appendChild(checkbox);
       contTarea.appendChild(txtTarea);
       contTarea.appendChild(boton);
-      taskListElement.appendChild(contTarea);
-      console.log(taskListElement);        
+      taskListElement.appendChild(contTarea);      
       //Anexamos evento al nuevo check creado para poder cambiar de estado la tarea. 
       //Guarda en tiempo real la actualizacion del estado de la tarea en la LocalStorage.
       checkbox.addEventListener("change", () => {
