@@ -1,5 +1,5 @@
 //Importacion del modulo de lógica
-import { createTaskList, saveListLocalStorage, loadListLocalStorage} from "tasklist.js";
+import { createTaskList, saveListLocalStorage, loadListLocalStorage} from "./tasklist.js";
 //Declaraciones de elementos del DOM
 const taskInputTitle         = document.querySelector("#inputboxFormTitle");
 const taskInputDescription   = document.querySelector("#inputboxFormDescription");

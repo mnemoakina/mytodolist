@@ -1,3 +1,3 @@
-import ui from "modules/ui.js";
+import ui from "./modules/ui.js";
 
 ui.startUI();
