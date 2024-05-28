@@ -1,5 +1,5 @@
 //Importacion del modulo de lógica
-import { createTaskList, saveListLocalStorage, loadListLocalStorage} from "./tasklist.js";
+import { createTaskList, saveListLocalStorage, loadListLocalStorage} from "/src/modules/tasklist.js";
 //Declaraciones de elementos del DOM
 const taskInputTitle         = document.querySelector("#inputboxFormTitle");
 const taskInputDescription   = document.querySelector("#inputboxFormDescription");
@@ -57,7 +57,7 @@ function showTasksUI(list, mode) {
       const checkbox = document.createElement("input");   
       const boton = document.createElement("button");
       const img = document.createElement('img'); 
-      img.src="../assets/img/trash.png";
+      img.src="/assets/img/trash.png";
       checkbox.type="checkbox"; 
       if (task.checked)
         checkbox.checked="true";      
