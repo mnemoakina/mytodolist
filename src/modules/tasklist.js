@@ -77,7 +77,7 @@ export function loadListLocalStorage() {
   try {
     let lista = JSON.parse(localStorage.getItem('todolist')); 
     if (lista === null || lista === undefined){
-      return []
+      return null
     }else{
       hidroLista = Object.assign(new TaskList(), lista);
       return hidroLista;
